@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A shape generator with Shibas.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Shiba Shapes</title>
+</head>
+
+
+<body>
+    <main>
+        <canvas id="myCanvas"></canvas>
+        <div id="shape-generator">
+            <form id="shape-form">
+                <div id="title">
+                    <h1>Shape Generator</h1>
+                    <p>Use the controls below to generate shapes.</p>
+                </div>
+                <fieldset>
+                    <legend>Select color:</legend>
+                    <div class="container">
+                        <div>
+                            <input type="radio" id="orange" name="color">
+                            <label for="orange" id="orange-label">Orange</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="blue" name="color">
+                            <label for="blue" id="blue-label">Blue</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="green" name="color">
+                            <label for="green" id="green-label">Green</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Select shape:</legend>
+                    <div class="container">
+                        <div>
+                            <input type="radio" id="square" name="shape">
+                            <label for="square" id="square-label">Square</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="triangle" name="shape">
+                            <label for="triangle" id="triangle-label">Triangle</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="circle" name="shape">
+                            <label for="circle" id="circle-label">Circle</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Fill with Shiba:</legend>
+                    <div class="container">
+                        <div>
+                            <input type="radio" id="yes" name="shiba">
+                            <label for="yes" id="yes-label">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="no" name="shiba">
+                            <label for="no" id="no-label">No</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <button id="generate" type="submit" form="shape-form">Generate</button>
+                <button id="clear" type="reset">Clear Screen</button>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

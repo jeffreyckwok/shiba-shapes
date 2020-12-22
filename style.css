@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+}
+
+#orange-label {
+    color: #FFB92B;
+}
+
+#blue-label {
+    color: #3575C5;
+}
+
+#green-label {
+    color: #00AA3B;
+}
+
+fieldset {
+    border: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    border: 1.5px solid black;
+    font-size: 15px;
+    outline: 0;
+    padding: 8px 20px 8px 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#title h1 {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+#title p {
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.container div {
+    flex-basis: 8em;
+}
+
+canvas {
+    margin-bottom: -500px;
+}
+
+#shape-generator {
+    top: 100px;
+    position: relative;
+    margin: 0;
+    margin-left: 20px;
+}
