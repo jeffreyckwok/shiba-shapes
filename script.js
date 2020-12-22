@@ -4,9 +4,9 @@ import Triangle from './shapes/triangle.js';
 
 export let context, gravity, shapes;
 
-// url for API
+// url for API + cors fix
 const BASE_URL = (number, urlBool, httpsBool) =>
-    `https://shibe.online/api/shibes?count=${number}&urls=${urlBool}&httpsUrls=${httpsBool}`;
+    `https://cors-anywhere.herokuapp.com/https://shibe.online/api/shibes?count=${number}&urls=${urlBool}&httpsUrls=${httpsBool}`;
 
 // canvas
 const canvas = document.getElementById('myCanvas');
